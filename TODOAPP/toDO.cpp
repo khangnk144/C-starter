@@ -26,7 +26,9 @@ public:
     static int getCount() {
         return count;
     }
-
+    string getNote() {
+        return note;
+    }
 private:
     string note;
     static int count;
@@ -76,11 +78,13 @@ int main() {
             cin >> index;
 
             if (index >= 0 && index < current_count) {
+                string s = a[index].getNote();
                 for (int i = index; i < current_count - 1; i++) {
                     a[i] = a[i + 1];
                 }
                 current_count--;
-                cout << "Note has been deleted!" << endl;
+                cout << "The note: \"" << s << "\" has been deleted!" << endl;
+                //cout << "Note has been deleted!" << endl;
             }
             else {
                 cout << "Invalid position!" << endl;
