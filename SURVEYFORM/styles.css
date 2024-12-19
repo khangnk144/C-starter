@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif; /* Đặt font chữ cho toàn bộ trang */
+    font-size: 18px; /* Đặt kích thước chữ mặc định */
+    background-image: url("https://cdn.mos.cms.futurecdn.net/AoWXgnHSxAAPxqymPQMQYL-1200-80.jpg"); /* Đặt hình nền */
+    background-size: cover; /* Đặt kích thước hình nền phủ kín */
+    background-attachment: fixed; /* Đặt hình nền cố định khi cuộn trang */
+    margin: 0; /* Đặt lề ngoài bằng 0 */
+    padding: 0; /* Đặt khoảng cách bên trong bằng 0 */
+    position: relative; /* Đặt vị trí tương đối để chứa lớp phủ */
+}
+
+body::before {
+    content: ""; /* Tạo lớp phủ */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: 0; /* Đặt vị trí trên cùng */
+    left: 0; /* Đặt vị trí bên trái */
+    width: 100%; /* Đặt chiều rộng 100% */
+    height: 100%; /* Đặt chiều cao 100% */
+    background-color: #6c6ca4; /* Màu lớp phủ */
+    opacity: 0.7; /* Độ mờ của lớp phủ */
+    z-index: -1; /* Đảm bảo lớp phủ nằm dưới nội dung */
+}
+
+h1 {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: white; /* Đặt màu chữ trắng */
+    margin-top: 0; /* Đặt lề trên bằng 0 */
+    font-family: Impact; /* Đặt font chữ Impact */
+    padding: 20px 0; /* Đặt khoảng cách trên và dưới */
+}
+
+.survey {
+    width: 90%; /* Đặt chiều rộng 90% */
+    max-width: 750px; /* Đặt chiều rộng tối đa 750px */
+    background-color: rgba(36, 36, 68, 0.9); /* Đặt màu nền với độ mờ */
+    color: white; /* Đặt màu chữ trắng */
+    margin: 20px auto; /* Đặt lề trên và dưới 20px, căn giữa */
+    padding: 20px; /* Đặt khoảng cách bên trong 20px */
+    border-radius: 10px; /* Đặt bo góc 10px */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); /* Đặt bóng đổ */
+}
+
+.center {
+    margin-left: auto; /* Căn giữa */
+    margin-right: auto; /* Căn giữa */
+}
+
+label {
+    display: block; /* Hiển thị dưới dạng khối */
+    margin-top: 20px; /* Đặt lề trên 20px */
+    /*letter-spacing: 0.5px;*/ /* Khoảng cách giữa các chữ cái */
+}
+
+p {
+    text-align: center; /* Căn giữa đoạn văn */
+    color: white; /* Đặt màu chữ trắng */
+    font-style: italic; /* Đặt kiểu chữ nghiêng */
+}
+
+form {
+    width: 100%; /* Đặt chiều rộng 100% */
+    max-width: 500px; /* Đặt chiều rộng tối đa 500px */
+    margin: 0 auto; /* Căn giữa */
+    padding-bottom: 2em; /* Đặt khoảng cách dưới 2em */
+}
+
+textarea, select, input {
+    width: 100%; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; /* Đặt kích thước hộp */
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block; /* Hiển thị trên một hàng */
+    width: auto; 
+    margin-right: 10px; 
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+fieldset {
+    border: none; /* Bỏ viền */
+    margin: 0; /* Đặt lề bằng 0 */
+    padding: 0; /* Đặt khoảng cách bên trong bằng 0 */
+}
+
+.pushup {
+    margin-top: 0; /* Đặt lề trên bằng 0 */
+}
+button[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #555572;
+    border-color: white;
+    min-width: 300px;
+}

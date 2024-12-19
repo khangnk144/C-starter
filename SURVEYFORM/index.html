@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title> <!-- Tiêu đề của trang -->
+    <link rel="stylesheet" href="styles.css"> <!-- Liên kết đến file CSS -->
+</head>
+<body>
+    <h1 id="title">HK Company Survey Form</h1> <!-- Tiêu đề của biểu mẫu khảo sát -->
+    <p id="description">Thank you for taking the time to help us improve the company</p> <!-- Mô tả ngắn gọn về biểu mẫu -->
+    <div class="survey">
+        <form method="post" action="https://survey-form.freecodecamp.rocks/" id="survey-form"> <!-- Biểu mẫu gửi dữ liệu bằng phương thức POST -->
+            <label id="name-label" for="name">Name:
+                <input id="name" type="text" name="name" placeholder="Enter your name" required> <!-- Trường nhập tên -->
+            </label>
+            <label id="email-label" for="email">Email:
+                <input id="email" type="email" name="email" placeholder="Enter your email" required> <!-- Trường nhập email -->
+            </label>
+            <label id="number-label" for="number">Age:
+                <input id="number" type="number" name="age" placeholder="Age" min="13" max="120" required> <!-- Trường nhập tuổi -->
+            </label>
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown" name="role"> <!-- Trường chọn vai trò hiện tại -->
+                    <option value="">Select an option</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Do you want our company to a friend?</legend> <!-- Câu hỏi về việc giới thiệu công ty -->
+                <label class="pushup">
+                    <input id="yessure" type="radio" name="friend" value="definitely"> Definitely <!-- Lựa chọn "Definitely" -->
+                </label>
+                <label class="pushup">
+                    <input id="maybe" type="radio" name="friend" value="maybe"> Maybe <!-- Lựa chọn "Maybe" -->
+                </label>
+                <label class="pushup">
+                    <input id="notesure" type="radio" name="friend" value="not_sure"> Not sure <!-- Lựa chọn "Not sure" -->
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What would you like to see improved?</legend> <!-- Câu hỏi về cải tiến -->
+                <label><input id="front-end" value="front-end" type="checkbox" name="improvement"> Front-end development</label> <!-- Lựa chọn "Front-end development" -->
+                <label><input id="back-end" value="back-end" type="checkbox" name="improvement"> Back-end development</label> <!-- Lựa chọn "Back-end development" -->
+            </fieldset>
+            <label>Any comments or suggestions?
+                <textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea> <!-- Trường nhập bình luận -->
+            </label>
+            <button id="submit" type="submit">Submit</button> <!-- Nút gửi biểu mẫu -->
+        </form>
+    </div>
+</body>
+</html>
