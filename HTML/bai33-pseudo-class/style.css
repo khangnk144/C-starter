@@ -1,0 +1,67 @@
+/* :link: chọn thẻ chưa được truy cập */
+a:link {
+  color: hotpink;
+}
+/* :hover: chọn các thẻ khi di chuột qua */
+a:hover {
+  color: red;
+}
+/* :active: chọn thẻ khi nhấn giữ chuột */
+a:active {
+  color: yellow;
+}
+/* chú ý: nếu có ba thẻ link, hover, actice cùng xuất hiện thì ưu tiên ghi thẻ link trước để tránh các thẻ sau bị ghi đè */
+/* :visited: chọn thẻ đã được truy cập */
+a:visited {
+  color: green;
+}
+
+/* :empty: chọn các thẻ <div> không có nội dung */
+.empty_test:empty {
+  background-color: lightpink;
+  height: 250px;
+  width: 250px;
+}
+.empty_test {
+  background-color: yellow;
+}
+
+/* p:hover {
+  color: pink;
+} */
+/* #home:target: chọn thẻ có id="home" khi trên url có hash tương ứng */
+h2:target {
+  color: blue;
+}
+/* p là thẻ con đầu tiên */
+p:first-child {
+  color: red;
+}
+p:last-child {
+  color: #a52a2a;
+  font-size: 30px;
+}
+p:nth-child(2) {
+  color: green;
+}
+/* p:nth-child(even){
+  background-color: yellow;
+} */
+p:only-child {
+  color: blue;
+}
+/* chú ý những thẻ sau đây sẽ khác */
+/* p:first-of-type: thẻ <p> đầu tiên xuất hiện trong cha */
+/*
+:last-of-type
+:nth-of-type(n)
+:nth-last-of-type(n)
+:only-of-type
+*/
+/* :not(selector)
+.top:not(p): chọn thẻ có class="top" trừ thẻ <p> 
+selector có thể là thẻ, class (cả pseudo-class), id, ... */
+*/
+
+/* thứ tự ưu tiên */
+/* yếu -> mạnh: universao -> element -> class -> id->inline style -> !important */

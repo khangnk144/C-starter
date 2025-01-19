@@ -1,0 +1,27 @@
+/* chọn phần tử <p> nằm ngay sau <div> */
+div + p {
+  color: red;
+}
+/* các phần tử <p> là con trực tiếp của class demo */
+.demo > p {
+  color: blue;
+}
+/* tất cả phần tử <p> là con của class "demo" */
+.demo p {
+  font-size: 25px;
+}
+.demo {
+  color: green;
+}
+.demo.demo2 {
+  color: yellow;
+}
+/* chọn tất cả thẻ <ul> nằm sau thẻ <div> */
+div ~ ul {
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+h3.test ~ h3 {
+  color: blue;
+}
