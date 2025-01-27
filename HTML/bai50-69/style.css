@@ -1,0 +1,83 @@
+a {
+  /* width: 100px; */
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: pink;
+  padding: 10px 16px;
+  border-radius: 999px;
+  color: black;
+  display: inline-block;
+  text-align: center;
+}
+a:hover {
+  background-color: black;
+  color: rgba(218, 80, 103, 0.973);
+}
+p {
+  /* color: white; */
+  text-align: justify;
+  text-decoration: none;
+  /* underline, line-through, overline, underline dotted */
+  /* letter-spacing: 1px; */
+  line-height: 150%;
+  /* chú ý: text-align: chỉ căn text so với box chứa nó */
+}
+.line {
+  text-indent: 40px;
+  text-transform: capitalize;
+  /* lowercase, uppercase */
+}
+/* white-space: 
+
+normal: trạng thái bth
+nowrap: không xuống dòng
+pre: giữ nguyên khoảng trắng
+pre-line: giữ nguyên khoảng trắng, xuống dòng
+(tất cả khoảng trắng trên từng dòng bị loại bỏ, các xuống dòng giữ nguyên, xuống dòng khi hết câu)
+pre-wrap: giữ nguyên khoảng trắng dư thừa, xuống dòng
+*/
+/* word-break: break-all; */
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: yellow;
+  overflow: auto;
+  /* 
+  visible (defaut): hiển thị đủ nội dung
+  hidden: ẩn nội dung bị tràn ra ngoài
+  scroll: hiển thị thanh cuộn
+  auto: tự động hiển thị thanh cuộn khi cần
+  */
+  overscroll-behavior: contain;
+  /* 
+  auto
+  none
+   */
+}
+h1 {
+  background-color: pink;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+h2 {
+  width: 300px;
+  background-color: aquamarine;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+li {
+  list-style-type: none;
+  /* margin-top: 4px; */
+  line-height: 1.5;
+}
+.fa-facebook {
+  font-size: 20px;
+  color: blue;
+}
+body {
+  background-color: #ccc;
+}

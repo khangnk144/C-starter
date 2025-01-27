@@ -1,0 +1,34 @@
+/* 
+Syntax: <line-width> || <line-style> || <line-color>
+*/
+div {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  background-color: pink;
+  border: 10px solid blue;
+  border-top: 10px ridge red;
+  border-radius: 10px;
+}
+/* 
+Line styles: 
+dashed: đường nét đứt
+dotted: viền là các chấm đứt
+double: viền 2 đường song song liền nhau
+groove: viền 3d
+ridge: viền 3d
+inset: viền 3d
+outset: viền 3d
+*/
+
+/* 
+border-bottom
+border-left
+border-right
+*/
+/* 
+top left
+top right
+bottom left
+bottom right
+*/

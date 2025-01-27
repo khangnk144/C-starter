@@ -1,0 +1,31 @@
+body {
+  background-color: lightcoral;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+}
+.container h2 {
+  font-size: 40px;
+}
+.container p {
+  font-size: 24px;
+  line-height: 1.2;
+}
+.container {
+  margin: 0 auto;
+  /* width: 700px; */
+  background-color: aqua;
+}
+.avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-left: -70px;
+  /* display: inline-block; */
+}
+.avatar:first-child {
+  margin-left: 0px;
+}
+.content {
+  background-color: green;
+  padding: 40px;
+}
